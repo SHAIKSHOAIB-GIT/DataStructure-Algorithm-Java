@@ -1,12 +1,14 @@
 import java.util.Arrays;
 
 public class InsertionSort {
+
     public static int[] sort(int[] arr){
-        int size = arr.length;
-        for(int i=1;i<size;i++){
+        
+
+        for(int i=1;i<arr.length;i++){
             int key = arr[i];
             int j = i-1;
-            while (j >=0&&arr[j]>key){
+            while (j >= 0 && arr[j] > key){
                 arr[j+1]=arr[j];
                 j--;
             }
@@ -14,6 +16,9 @@ public class InsertionSort {
            
         } return arr;
     }
+
+
+
     public static void main(String[] args) {
         int[] arr = {5, 4, 8, 2, 1};
         System.out.println("Original Array: " + Arrays.toString(arr));
